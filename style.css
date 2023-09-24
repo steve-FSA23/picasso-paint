@@ -1,0 +1,402 @@
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paint-container {
+    margin: 8rem auto;
+}
+
+.canvas {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+.picasso-title {
+    width: 100%;
+    position: absolute;
+    top: -100px;
+    text-align: center;
+}
+
+.shape1,
+.shape2,
+.shape3,
+.shape4,
+.shape5,
+.shape6,
+.shape7,
+.shape8,
+.shape9,
+.shape10,
+.shape11,
+.shape12,
+.shape13,
+.shape14 {
+    position: absolute;
+    border-radius: 5px;
+}
+
+.shape1 {
+    /* Diamond shape*/
+    width: 200px;
+    height: 200px;
+    left: 255px;
+    top: 100px;
+    background-color: #ff5733;
+    transform: rotate(45deg);
+}
+
+.shape2 {
+    /* Diamond shape*/
+    width: 150px;
+    height: 150px;
+    left: 200px;
+    top: 100px;
+    background-color: #3498db;
+    transform: rotate(-30deg);
+}
+
+.shape3 {
+    /* Diamond shape*/
+    width: 100px;
+    height: 100px;
+    left: 180px;
+    top: 100px;
+    background-color: #e74c3c;
+    transform: rotate(60deg);
+}
+
+.shape4 {
+    /* circles shape*/
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    transform: rotate(-80deg);
+    top: 110px;
+    left: 30px;
+    border-radius: 50%;
+}
+
+.shape5 {
+    /* circles shape*/
+    width: 60px;
+    height: 60px;
+    background-color: #e74c3c;
+    transform: rotate(-80deg);
+    top: 180px;
+    left: 30px;
+    border-radius: 50%;
+}
+
+.shape6 {
+    /* circles shape*/
+    width: 80px;
+    height: 80px;
+    background-color: #3498db;
+    transform: rotate(-80deg);
+    top: 255px;
+    left: 30px;
+    border-radius: 50%;
+}
+
+.shape7 {
+    /* Bar shape*/
+    width: 140px;
+    height: 20px;
+    background-color: #343cdb;
+    transform: rotate(-110deg);
+    top: 100px;
+    left: 30px;
+}
+
+.shape8 {
+    /* Bar shape*/
+    width: 140px;
+    height: 20px;
+    background-color: #9026a5;
+    transform: rotate(-80deg);
+    top: 250px;
+    left: 70px;
+}
+
+.shape9 {
+    /* Bar shape*/
+    width: 140px;
+    height: 20px;
+    background-color: #a5264c;
+    transform: rotate(-50deg);
+    top: 405px;
+    left: 95px;
+}
+
+.shape10 {
+    /* line shape*/
+    width: 140px;
+    height: 10px;
+    background-color: none;
+    border-bottom: 3px inset rgb(34, 34, 57);
+    transform: rotate(-50deg);
+    top: 405px;
+    left: 205px;
+}
+
+.shape11 {
+    /* line shape*/
+    width: 140px;
+    height: 10px;
+    background-color: none;
+    border-bottom: 3px inset rgb(50, 50, 110);
+    transform: rotate(-50deg);
+    top: 405px;
+    left: 230px;
+}
+
+.shape12 {
+    /* line shape*/
+    width: 140px;
+    height: 10px;
+    background-color: none;
+    border-bottom: 3px inset rgb(55, 55, 92);
+    transform: rotate(-50deg);
+    top: 405px;
+    left: 260px;
+}
+
+.shape13 {
+    /* line shape*/
+    width: 40px;
+    height: 40px;
+    background-color: #e74c3c;
+    background-color: none;
+    border-bottom: 3px inset rgb(55, 55, 92);
+    transform: rotate(-50deg);
+    top: 405px;
+    left: 300px;
+}
+
+.shape14 {
+    /* line shape*/
+    width: 35px;
+    height: 35px;
+    background-color: none;
+    border-bottom: 3px inset rgb(55, 55, 92);
+    transform: rotate(-50deg);
+    background-color: deeppink;
+    top: 390px;
+    left: 220px;
+}
+
+.container-form {
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-me {
+    margin: 2rem 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin: 0.8rem 6rem 0.5rem 6rem;
+}
+
+#contact-form input[type="text"],
+input[type="email"] {
+    width: 60%;
+    padding: 0.6rem;
+    margin: 0.2rem auto;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 2.5rem auto;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .canvas {
+        width: 358px;
+        height: 350px;
+    }
+    .shape1 {
+        /* Diamond shape*/
+        width: 100px;
+        height: 100px;
+        left: 235px;
+        top: 50px;
+    }
+    .shape2 {
+        /* Diamond shape*/
+        width: 75px;
+        height: 75px;
+        left: 200px;
+        top: 50px;
+    }
+    .shape3 {
+        /* Diamond shape*/
+        width: 50px;
+        height: 50px;
+        top: 50px;
+    }
+    .shape4 {
+        /* circles shape*/
+        width: 50px;
+        height: 50px;
+        top: 55px;
+        left: 15px;
+    }
+    .shape5 {
+        /* circles shape*/
+        width: 60px;
+        height: 60px;
+        top: 120px;
+        left: 25px;
+    }
+    .shape6 {
+        /* circles shape*/
+        width: 80px;
+        height: 80px;
+        top: 195px;
+        left: 30px;
+        border-radius: 50%;
+    }
+    .shape7 {
+        /* Bar shape*/
+        width: 110px;
+        height: 20px;
+        top: 100px;
+        left: 50px;
+    }
+    .shape8 {
+        /* Bar shape*/
+        width: 110px;
+        height: 20px;
+        top: 220px;
+        left: 78px;
+    }
+    .shape9 {
+        /* Bar shape*/
+        width: 110px;
+        height: 20px;
+        top: 288px;
+        left: 98px;
+    }
+    .shape10 {
+        /* line shape*/
+        width: 110px;
+        height: 10px;
+        top: 255px;
+        left: 195px;
+    }
+    .shape11 {
+        /* line shape*/
+        width: 110px;
+        height: 10px;
+        top: 255px;
+        left: 220px;
+    }
+    .shape12 {
+        /* line shape*/
+        width: 110px;
+        height: 10px;
+        top: 255px;
+        left: 245px;
+    }
+    .shape13 {
+        /* line shape*/
+        width: 40px;
+        height: 40px;
+        top: 255px;
+        left: 278px;
+    }
+    .shape14 {
+        /* line shape*/
+        width: 25px;
+        height: 25px;
+        top: 250px;
+        left: 210px;
+    }
+    .paint-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-form {
+        width: 354px;
+        height: 400px;
+        margin: 4rem 0;
+    }
+    #contact-form label {
+        margin: 0.8rem 6rem 0.5rem 4.2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .paint-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-form {
+        width: 500px;
+        height: 400px;
+        margin: 4rem 0;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    #contact-form label {
+        margin: 0.8rem 6rem 0.5rem 6rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container-form {
+        width: 500px;
+        height: 400px;
+        margin: 4rem 0;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    #contact-form label {
+        margin: 0.8rem 6rem 0.5rem 6rem;
+    }
+}
